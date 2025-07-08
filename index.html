@@ -7,13 +7,26 @@
   <title>Miki Grau – Drummer & Record Producer</title>
   <style>
     body {
-      font-family: 'Courier New', Courier, monospace;
-      margin: 0;
-      padding: 3rem 2rem 2rem 2rem;
-      background: #1a1a1a;
-      color: #d4af37;
-      text-align: center;
-    }
+  background: url('./FondoWeb.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 3rem 2rem 2rem 2rem;
+  color: #d4af37;
+  text-align: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 26, 26, 0.85);
+  z-index: -1;
+}
     .container {
       max-width: 800px;
       margin: 0 auto;
